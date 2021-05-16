@@ -425,13 +425,13 @@ img.logo {
 }
 
 .quote-one {
-  background: url("/img/trilha.jpg") no-repeat center;
+  background: url("../img/trilha.jpg") no-repeat center;
   background-attachment: fixed;
   background-size: cover;
 }
 
 .quote-two {
-  background: url("/img/treino-praia.jpg") no-repeat center;
+  background: url("../img/treino-praia.jpg") no-repeat center;
   background-attachment: fixed;
   background-size: cover;
 }
