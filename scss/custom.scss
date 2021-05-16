@@ -1,0 +1,163 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$theme-color: #d52856;
+$primary: $theme-color !default;
+
+$theme-colors: (
+  "primary": $theme-color
+);
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+// 4. Include any optional Bootstrap components as you like
+@import "../bootstrap/scss/root";
+@import "../bootstrap/scss/buttons";
+@import "../bootstrap/scss/card";
+
+// 5. Add additional custom code here
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-top: 3rem;
+    color: #5a5a5a;
+  }
+
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+  img.logo {
+    width: auto;
+    max-height: 50px;
+  }
+
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+
+  .carousel-item {
+    height: 35rem;
+    background-color: black;
+  }
+
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 35rem;
+    opacity: 0.5;
+  }
+
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+
+  /* Center align the text within the three columns below the carousel */
+  .marketing {
+    margin-bottom: 3rem;
+      .col-lg-4 {
+          margin-bottom: 1.5rem;
+          text-align: center;
+      }
+
+      .marketing-img {
+        width: 100%;
+        max-width: 140px;
+        height: 140px;
+      }
+
+      h2 {
+          font-weight: 400;
+      }
+
+      .col-lg-4 p {
+          margin-right: .75rem;
+          margin-left: .75rem;
+      }
+  }
+
+  /* Parallex image
+  ------------------------- */
+  .quote {
+    min-height: 300px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .quote-one {
+    background: url("/img/trilha.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .quote-two {
+    background: url("/img/treino-praia.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .parallax {
+    background-color: rgba(0, 0, 0, 0.555);
+    min-height: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 100px;
+  }
+
+    /* FOOTER
+  -------------------------------------------------- */
+  .footer {
+    margin-top: 3rem;
+    padding: 20px 0;
+  }
+
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-item {
+        height: 38rem;
+      }
+
+    .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    }
+
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
