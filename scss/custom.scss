@@ -76,9 +76,14 @@ body {
       }
 
       .marketing-img {
-        width: 100%;
-        max-width: 140px;
+        width: 140px;
         height: 140px;
+        transition: width 0.5s, height 0.5s;
+      }
+
+      .marketing-img:hover {
+        width: 200px;
+        height: 200px;
       }
 
       h2 {
@@ -101,13 +106,13 @@ body {
   }
 
   .quote-one {
-    background: url("/img/trilha.jpg") no-repeat center;
+    background: url("../img/trilha.jpg") no-repeat center;
     background-attachment: fixed;
     background-size: cover;
   }
 
   .quote-two {
-    background: url("/img/treino-praia.jpg") no-repeat center;
+    background: url("../img/treino-praia.jpg") no-repeat center;
     background-attachment: fixed;
     background-size: cover;
   }
